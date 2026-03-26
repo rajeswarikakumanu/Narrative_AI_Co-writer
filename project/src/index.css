@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --fantasy: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --scifi: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  --horror: linear-gradient(135deg, #1a0000 0%, #3d0000 50%, #000000 100%);
+  --comedy: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #ffd876 100%);
+}
+
+* {
+  @apply transition-colors duration-300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fantasy-theme {
+  background: var(--fantasy);
+}
+
+.scifi-theme {
+  background: var(--scifi);
+}
+
+.horror-theme {
+  background: var(--horror);
+}
+
+.comedy-theme {
+  background: var(--comedy);
+}
+
+.glass-effect {
+  @apply backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl;
+}
+
+.chat-bubble-user {
+  @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-3xl rounded-tr-none px-6 py-4 max-w-md shadow-lg;
+}
+
+.chat-bubble-ai {
+  @apply bg-white text-gray-900 rounded-3xl rounded-tl-none px-6 py-4 max-w-md shadow-lg;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors bg-white/90 backdrop-blur-sm;
+}
+
+.btn-primary {
+  @apply px-6 py-3 rounded-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:shadow-lg hover:scale-105 transition-all active:scale-95;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 rounded-lg font-semibold text-gray-900 bg-white hover:bg-gray-50 border border-gray-300 transition-all;
+}
+
+.btn-danger {
+  @apply px-4 py-2 rounded-lg font-semibold text-white bg-red-500 hover:bg-red-600 transition-all;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.3s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,265 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main App Container */
+.stApp {
+    transition: background 0.5s ease;
+}
+
+/* Fantasy Theme */
+.fantasy-theme {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Sci-Fi Theme */
+.scifi-theme {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+/* Horror Theme */
+.horror-theme {
+    background: linear-gradient(135deg, #1a0000 0%, #3d0000 50%, #000000 100%);
+}
+
+/* Comedy Theme */
+.comedy-theme {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #ffd876 100%);
+}
+
+/* Login Card Styling */
+.login-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.login-title {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Input Fields */
+.stTextInput > div > div > input {
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Buttons */
+.stButton > button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Chat Bubbles */
+.user-message {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px 20px 5px 20px;
+    margin: 10px 0;
+    max-width: 70%;
+    margin-left: auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ai-message {
+    background: #f0f2f6;
+    color: #333;
+    padding: 15px 20px;
+    border-radius: 20px 20px 20px 5px;
+    margin: 10px 0;
+    max-width: 70%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Container */
+.chat-container {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    min-height: 500px;
+}
+
+.chat-title {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Sidebar Styling */
+.css-1d391kg {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+section[data-testid="stSidebar"] {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Sidebar Headers */
+.sidebar-header {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #667eea;
+}
+
+/* Story History Items */
+.story-item {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 8px 0;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.story-item:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+/* Delete Button */
+.delete-btn {
+    background: #ff4b4b !important;
+    color: white !important;
+    font-size: 12px !important;
+    padding: 5px 15px !important;
+    border-radius: 5px !important;
+    margin-top: 5px !important;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: linear-gradient(135deg, #ff4b4b 0%, #c62828 100%) !important;
+    color: white !important;
+    margin-top: 30px !important;
+}
+
+/* Select Box (Genre) */
+.stSelectbox > div > div {
+    border-radius: 10px;
+}
+
+/* Text Area */
+.stTextArea > div > div > textarea {
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    min-height: 100px;
+}
+
+.stTextArea > div > div > textarea:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Success/Error Messages */
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #c3e6cb;
+    margin: 15px 0;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #f5c6cb;
+    margin: 15px 0;
+}
+
+/* Tabs Styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 10px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 10px 10px 0 0;
+    padding: 10px 30px;
+    font-weight: 600;
+}
+
+/* Spacing and Layout */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chat-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .user-message, .ai-message {
+        max-width: 90%;
+    }
+
+    .login-card {
+        padding: 25px;
+    }
+}
